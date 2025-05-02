@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-4 py-2 rounded-xl font-heading hover:opacity-90;
+  }
+
+  .heading-xl {
+    @apply text-4xl font-heading;
+  }
+}
