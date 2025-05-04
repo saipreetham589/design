@@ -12,12 +12,12 @@ export default function CitationsList({ items }) {
 
         <button
           onClick={() => setOpen(o => !o)}
-          className="flex items-center space-x-1 hover:text-gray-200"
+          className="flex items-center space-x-1"
         >
         <span>Resources</span>
           {open
-            ? <FaChevronUp className="w-4 h-4" />
-            : <FaChevronDown className="w-4 h-4" />
+            ? <FaChevronUp className="w-2 h-2" />
+            : <FaChevronDown className="w-2 h-2" />
           }
           
         </button>

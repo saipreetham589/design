@@ -8,7 +8,7 @@ const personalities = [
   "Socrates", "Confucius"
 ];
 
-export default function NavBar() {
+export default function NavBar({ toggleTimeline, showTimeline}) {
   const [isDark, setIsDark] = useState(false);
   const [personality, setPersonality] = useState("Henry George");
 
@@ -25,7 +25,16 @@ export default function NavBar() {
       {/* Right-side controls */}
       <div className="flex items-center gap-4 text-sm text-white">
         {/* Links */}
-        <a href="#" className="font-heading font-semibold text-black">Timeline</a>
+        <button
+            onClick={toggleTimeline}
+            className={`font-heading font-semibold transition ${
+                showTimeline
+                ? 'text-ppYellow'
+                : 'text-black hover:text-ppYellow'
+            }`}
+            >
+            Timeline
+        </button>
 
         {/* Personality Dropdown */}
         <div className="relative">

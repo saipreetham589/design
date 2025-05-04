@@ -106,7 +106,7 @@ export default function ChatView() {
                 <button
                   key={idx}
                   onClick={() => handleSend(q)}
-                  className="px-3 py-1 bg-ppYellow text-black dark:bg-gray-200 dark:text-black rounded-full text-xs hover:bg-ppYellow"
+                  className="px-3 py-1 bg-white shadow-md text-black dark:bg-gray-200 dark:text-black rounded-full text-xs hover:bg-softBG"
                 >
                   {q}
                 </button>
@@ -128,7 +128,7 @@ export default function ChatView() {
             value={input}
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSend()}
-            className="flex-1 px-4 py-2 rounded-full bg-white text-black dark:bg-gray-100 dark:text-black placeholder-gray-500 outline-none text-sm"
+            className="flex-1 px-4 py-2 rounded-full bg-white shadow-md text-black dark:bg-gray-100 dark:text-black placeholder-gray-500 outline-none text-sm"
           />
           <button
             onClick={() => handleSend()}
